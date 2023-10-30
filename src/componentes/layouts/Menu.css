@@ -1,0 +1,95 @@
+.Menu {
+    background-color: #2A6786;
+    width: 1000px;
+    transition: 0.3s;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Menu.open {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.handle-menu {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+}
+
+
+.Menu nav {
+    flex: 1;
+}
+
+.Menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.Menu ul li {
+    display: flex;
+}
+
+.Menu ul li a {
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    color: #FFF;
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.5); */
+    font-size: 1.5vw;
+    flex: 1;
+}
+
+.Menu li a:hover {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+/* Celular */
+@media (max-width: 640px) {
+    .Menu {
+        width: 300px;
+        /* margin-left: 7.5px; */
+    }
+
+    .Menu.open {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .Menu ul li a {
+        font-size: 5vw;
+    }
+}
+
+/* Tablet */
+@media (min-width: 641px) and (max-width: 1007px) {
+    .Menu {
+        width: 641px;
+    }
+
+    .Menu.open {
+        width: 641px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .Menu ul li a {
+        font-size: 4.5vw;
+    }
+}

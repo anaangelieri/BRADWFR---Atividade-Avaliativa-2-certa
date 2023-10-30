@@ -1,0 +1,173 @@
+#root {
+  text-align: center;
+}
+
+.game {
+  background-color: #819869;
+  width: 70vw;
+  height: 55vw;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: #D7E7E5;
+  background-image: none;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.square {
+  width: 15vw;
+  height: 15vw;
+  float: left;
+  background-color: #D7E7E5;
+  font-size: 5vw;
+  text-align: center;
+  border: 3px solid black;
+  align-items: center;
+}
+
+.list {
+  list-style-type: none;
+  margin-left: -2.2vw;
+}
+
+.buttons {
+  width: 31vw;
+  height: 3.5vw;
+  font-size: 2vw;
+  margin-bottom: 2.5vw;
+  font-family: 'Merriweather', serif;
+  color: white;
+  background-color: #819869;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-info {
+  background-color: #2A6786;
+  width: 40vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  border: 5px solid black;
+  padding-top: 2.5vw;
+  flex-wrap: wrap;
+}
+
+
+.play-board {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+h1 {
+  color: black;
+  font-family: 'DM Serif Display', serif;
+  font-size: 5vw;
+  text-shadow: 2px 2px 4px rgba(265, 265, 265, 1);
+
+}
+
+
+.status {
+  margin: 2vw;
+  font-size: 3vw;
+  font-family: 'Merriweather', serif;
+  color: white;
+}
+
+
+hr {
+  margin: 7vw;
+  width: 10vw;
+  height: 2px;
+  border: none;
+}
+
+/* Celulares */
+@media only screen and (max-width: 640px) {
+  h1 {
+    font-size: 9vw;
+  }
+
+  .game {
+    height: 75vw;
+    margin-left: 3.5vw;
+  }
+
+  .status {
+    text-align: center;
+    font-size: 5.5vw;
+  }
+
+  .square {
+    width: 20vw;
+    height: 20vw;
+    font-size: 9vw;
+  }
+
+
+  .game-info {
+    width: 60vw;
+    align-content: center;
+    align-items: center;
+  }
+
+  .list {
+    margin-left: -9vw;
+  }
+
+  .buttons {
+    width: 50vw;
+    height: 15vw;
+    font-size: 4vw;
+  }
+
+}
+
+/*Tablets*/
+@media only screen and (min-width: 641px) and (max-width: 1007px) {
+
+  h1 {
+    font-size: 10vw;
+  }
+
+  .game {
+    width: 80vw;
+    height: 80vw;
+    margin-left: 3.5vw;
+  }
+
+  .status {
+    font-size: 4vw;
+  }
+
+  .list {
+    margin-left: -4.5vw;
+  }
+
+  .square {
+    width: 22vw;
+    height: 22vw;
+    font-size: 10vw;
+  }
+
+  .game-info {
+    width: 70vw;
+  }
+
+  .buttons {
+    width: 51vw;
+    height: 7vw;
+    font-size: 3.5vw;
+  }
+}

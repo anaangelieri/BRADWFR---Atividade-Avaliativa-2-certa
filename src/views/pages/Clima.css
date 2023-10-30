@@ -1,0 +1,68 @@
+.Clima {
+  height: 50vw;
+}
+
+.text_clima {
+  background-color: #819869;
+  width: 700px;
+  border-radius: 15px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid black;
+  color: white;
+  font-size: 2vw;
+  font-family: 'Merriweather', serif;
+}
+
+.input_clima {
+  width: 550px;
+  height: 50px;
+  align-items: center;
+  font-size: 2vw;
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  color: #545454;
+  border: 5px solid #819869;
+}
+
+.button_clima {
+  width: 200px;
+  height: 55px;
+  font-size: 2vw;
+  font-family: 'Merriweather', serif;
+  text-align: center;
+}
+
+/* Celular */
+@media only screen and (max-width: 640px) {
+  .input_clima {
+    width: 350px;
+    font-size: 5vw;
+  }
+
+  .button_clima {
+    font-size: 5vw;
+  }
+
+  .text_clima {
+    width: 300px;
+    font-size: 5vw;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 641px) and (max-width: 1007px) {
+  .input_clima {
+    width: 450px;
+    font-size: 3vw;
+  }
+
+  .button_clima {
+    font-size: 3vw;
+  }
+
+  .text_clima {
+    font-size: 4vw;
+  }
+}
